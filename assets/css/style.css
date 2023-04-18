@@ -100,13 +100,13 @@ button, .button-primary, .nav-item {
 }
 
 /* Become a foster styling */
-#nav .button-primary {
+.button-primary {
       background-color: var(--dark-blue);
       padding: 14px;
       border-radius: 5px;
 }
 
-#nav .button-primary:hover {
+.button-primary:hover {
     outline-color: var(--cream);
     outline-width: 3px;
     outline-style: solid;
