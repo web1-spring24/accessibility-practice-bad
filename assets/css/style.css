@@ -13,25 +13,37 @@ body {
     font-family: 'Lexend', sans-serif;
     background-color: var(--cream);
     font-size: 2rem;
-    
+    overflow-x: hidden;
+
 
 
 }
 
-*:focus {
-    outline: none;
+.faq-question {
+    width: 600px;
 }
+
+
 
 #main {
     width: 60%;
     margin: 100px auto;
 }
 
-h1 {
+h1, h4, h2 {
     color: var(--dark-blue);
     font-family: 'Grandstander', cursive;
     font-size: 3.2rem;
 
+}
+
+.yellow {
+    color: goldenrod;
+
+}
+
+.green {
+    color: green;
 }
 
 /*don't show bullets */
@@ -138,7 +150,7 @@ header #nav menu li menu li {
 
 
 
-@media (min-width: 1311px) {
+
   
 /* Don't show the mobile menu button if the screen is larger than the breakpoint */
     #mobile-menu-button {
@@ -162,80 +174,8 @@ header #nav menu li:hover button + menu, header #nav menu li:hover .nav-item + m
     border-radius: 5px;
 }
 
-}
-
-@media (max-width: 1310px) {
-/* the whole navigation section */
-header nav {
-    display: block;
-    padding: 0px;
-    
-} 
-
-/* just the menu part (excludes tcnj) */
-header nav > menu {
-    flex-direction: column;
-    align-items: start;
-    justify-content: flex-start;
-    padding-left: 0px;
-    background-color: var(--dark-blue);
-    height: 100vh;
- 
-}
-
-/* all of the lis should span the full width */
-header nav menu li {
-width: 100%;
-
-}
-
-/* sub menus */
-header nav menu menu {
-    display: none;
-    background-color: var(--teal);
-    padding-left: 0px;
-}
-
-/* sub menu li */
-header nav menu li menu li  {
-    padding-left: 30px;
-    border-bottom: 2px solid var(--dark-blue);
-}
-
-/* the menu items, which can be a link or button */
-header nav menu li a, header nav menu button {
-    font-size: 2.4rem;
-    padding: 30px;
-    display: block;
-    width: 100%;
-    text-align: left;
-    border-bottom: 2px solid var(--teal);
-}
-
-/* don't let the link color change on hover */
-header nav menu li a:hover {
-    color: var(--cream);
-}
-.mobile-hidden {
-    display: none;
-}
 
 
-header nav > div {
-   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 30px;
-}
-
-#mobile-menu-button {
-    background-color: transparent;
-    display: block;
-}
-
-
-}
 
 #popup {
 position: relative;
@@ -273,7 +213,7 @@ text-align: center;
     margin: 40px 0px;
 }
 
-.faq-question #faq-button {
+.faq-question .faq-button {
 
 width: 100%;
 text-align: left;
@@ -284,7 +224,7 @@ position: relative;
 background-color: transparent;
 }
 
-.faq-question #faq-button span {
+.faq-question .faq-button span {
     
     position: absolute;
     right: 0px;
@@ -292,7 +232,7 @@ background-color: transparent;
     font-size: 30px;
 }
 
-.faq-question #faq-button.open::after {
+.faq-question .faq-button.open::after {
    
     position: absolute;
     right: 0px;
